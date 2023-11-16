@@ -27,7 +27,7 @@ const Page = ()=>{
   }, []);
   console.log(contact)
     return(
-        <div className="bg-sky-300">
+        <div className="bg-gray-200 border border-gray-300 rounded-lg p-4 flex items-center justify-evenly">
          <UserIcon height={300} width={300}/>
             {contact && <div className="flex flex-col">
                 <span>email :{contact.email}</span>

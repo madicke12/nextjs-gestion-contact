@@ -1,5 +1,4 @@
-## Next.js App Router Course - Starter
+## Next.js App Contact Manager
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Une app de gestion de contact qui permet d'ajouter , modifier ,supprimer ou visualiser un contac
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
