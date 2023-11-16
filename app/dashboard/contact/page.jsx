@@ -1,5 +1,4 @@
 'use client' 
-import { getContactById } from "@/app/lib/utils"
 import { UserIcon } from "@heroicons/react/24/solid"
 import axios from "axios"
 import { useSearchParams } from "next/navigation"

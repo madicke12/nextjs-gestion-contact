@@ -12,7 +12,7 @@ const contactSchema = z.object({
         message: 'Number must be at least 9 characters long',
         path:['custom']
       })
-    // Add more properties as needed
+   
   });
 const addContactAction = async(formadata)=>{
 'use server'
