@@ -15,7 +15,7 @@ const Page = ()=>{
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/contacts/${id}`);
+        const response = await axios.get(`https://6554eaf863cafc694fe73304.mockapi.io/contacts/${id}`);
         //console.log(response)
         setContact(response.data);
       } catch (error) {

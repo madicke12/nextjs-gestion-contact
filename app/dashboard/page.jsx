@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const delContactById = async (id) => {
   try {
-    await axios.delete(`http://localhost:3001/contacts/${id}`);
+    await axios.delete(`https://6554eaf863cafc694fe73304.mockapi.io/contacts/${id}`);
   } catch (err) {
     console.log(err);
   }
@@ -14,7 +14,7 @@ const delContactById = async (id) => {
 
 const Page  =async()=> {
   
-    const data = await fetch("http://localhost:3001/contacts");
+    const data = await fetch("https://6554eaf863cafc694fe73304.mockapi.io/contacts");
     const contacts = await data.json();
    
 

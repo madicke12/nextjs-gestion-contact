@@ -26,7 +26,7 @@ const data = {
 console.log(data)
 try{
     const parsedData = contactSchema.parse(data)
-    parsedData ? await axios.patch(`http://localhost:3001/contacts/${id}`,parsedData) : null
+    parsedData ? await axios.patch(`https://6554eaf863cafc694fe73304.mockapi.io/contacts/${id}`,parsedData) : null
     revalidatePath('/dashboard', 'layout')
 }
 catch(error){

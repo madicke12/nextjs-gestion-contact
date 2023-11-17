@@ -23,7 +23,7 @@ const data = {
 }
 try{
     const parsedData = contactSchema.parse(data)
-    parsedData ? await axios.post('http://localhost:3001/contacts',parsedData) : null
+    parsedData ? await axios.post('https://6554eaf863cafc694fe73304.mockapi.io/contacts',parsedData) : null
     revalidatePath('/dashboard', 'layout')
 }
 catch(error){
