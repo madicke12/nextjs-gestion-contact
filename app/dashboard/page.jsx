@@ -2,11 +2,13 @@
 'use client'
 import { PencilIcon, TrashIcon, UserIcon } from "@heroicons/react/24/outline";
 import axios from "axios";
+import { revalidatePath } from "next/cache";
 import Link from "next/link";
 
 const delContactById = async (id) => {
   try {
     await axios.delete(`https://6554eaf863cafc694fe73304.mockapi.io/contacts/${id}`);
+    revalidatePath('/dashboard','layout')
   } catch (err) {
     console.log(err);
   }

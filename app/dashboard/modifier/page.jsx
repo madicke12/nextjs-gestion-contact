@@ -26,12 +26,11 @@ const data = {
 console.log(data)
 try{
     const parsedData = contactSchema.parse(data)
-    parsedData ? await axios.patch(`https://6554eaf863cafc694fe73304.mockapi.io/contacts/${id}`,parsedData) : null
-    revalidatePath('/dashboard', 'layout')
+    parsedData ? await axios.put(`https://6554eaf863cafc694fe73304.mockapi.io/contacts/${id}`,parsedData) : null
+  
 }
 catch(error){
-    const customError = error.errors.find(err => err.code === 'custom');
-   customError ? console.log(customError.message) : null
+    console.log(error)
 }
 }
 const Page = () => {
