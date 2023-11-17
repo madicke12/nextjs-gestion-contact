@@ -2,7 +2,6 @@
 'use client'
 import { PencilIcon, TrashIcon, UserIcon } from "@heroicons/react/24/outline";
 import axios from "axios";
-import { revalidatePath } from "next/cache";
 import Link from "next/link";
 
 const delContactById = async (id) => {
